@@ -1,0 +1,39 @@
+.bk-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+@font-face {
+  font-family: 'Jiyucho';
+  src: url('../Jiyucho.woff') format('woff');
+}
+.font-jiyu {
+  font-family:'Jiyucho';
+}
+.toggle-wrap .toggle-button {
+    display: block;
+    cursor: pointer;
+    padding: 3px 0px;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 3px;
+  }
+   
+  .toggle-wrap .toggle-button:hover {
+    border-color: red;
+  }
+   
+  .toggle-wrap .toggle-content,
+  .toggle-wrap > input[type="checkbox"] {
+    display: none;
+  }
+   
+  .toggle-wrap > input[type="checkbox"]:checked ~ .toggle-content {
+    display: block;
+  }
+
+  .font-mpuls{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+

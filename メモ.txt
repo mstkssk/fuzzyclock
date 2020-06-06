@@ -1,0 +1,49 @@
+00-01   ちょうど
+02-10   ｎじすぎ
+10-15   10ふんくらい
+15-20   15ふんくらい
+20-25   20ふんくらい
+25-30   そろそろｎじはん
+30-35   ｎじはんすぎ
+35-45   20ふんくらい
+45-50   25ふんくらい
+50-55   そろそろｎ+1じ
+55-00  　ｎ+1じまえ
+
+12：00-12：30おひる
+15：00-15：30おやつのじかん
+（今日の日没を取得して：）ひがくれた
+（今日の日の出を取得して：）ひがのぼる
+0：00-0：05まよなか
+02：00-2：30うしみつどき
+
+
+
+setInterval(clock, 1000);
+
+function clock()
+{
+	var weeks = new Array("Sun","Mon","Thu","Wed","Thr","Fri","Sat");
+	var now = new Date();
+	var y = now.getFullYear();
+	var mo = now.getMonth() + 1;
+	var d = now.getDate();
+	var w = weeks[now.getDay()];
+	var h = now.getHours();
+	var mi = now.getMinutes();
+	var s = now.getSeconds();
+
+	if (mo < 10) mo = "0" + mo;
+	if (d < 10) d = "0" + d;
+	if (mi < 10) mi = "0" + mi;
+	if (s < 10) s = "0" + s;
+
+　　　document.getElementById("timer01").innerHTML = fuzzy;
+	document.getElementById("clock_date").innerHTML =  y + "/" + mo + "/" + d + " (" + w + ")";
+	document.getElementById("clock_time").innerHTML = h + ":" + mi + ":" + s;
+	document.getElementById("clock_frame").style.fontSize =  window.innerWidth / 10 + "px";
+        var ar_Hourtxt = new Array ('れい', 'いち', 'に','さん','よ','ご','ろく','しち','はち','く','じゅう','じゅういち');
+
+   
+    document.getElementById("timer01").innerHTML = fuzzy;
+}
