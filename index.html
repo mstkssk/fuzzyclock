@@ -23,7 +23,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand">Japaneze Fuzzy Clock</a>
-            <button class="navbar-toggler" data-target="#top-nav" data-toggle="collapse" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+           <!--
+                <button class="navbar-toggler" data-target="#top-nav" data-toggle="collapse" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="top-nav" class="collapse navbar-collapse">
@@ -33,6 +34,7 @@
                     </li>
                 </ul>
             </div>
+           -->
         </nav>
     </header>
     <main class="bk-fixed container-fluid">
@@ -43,7 +45,7 @@
             </div>
             <div id= "a_timer" class="col-12 p-2 py-5 ">
             <!--時計-->
-                <div id="timer01"  class=" font-jiyu w-75 mx-auto text-center font-weight-bold font-weight-light" style="font-size: xxx-large;"></div>
+                <div id="timer01"  class="font-jiyu w-75 mx-auto text-center font-weight-bold " style="font-size: xxx-large; color: #343a40;"></div>
             </div>
 
             <div class="col-12">
@@ -53,10 +55,14 @@
                     <label class="toggle-button " for="toggle-checkbox">
                         <img id="time_image" style="max-width: 450px; width: 75%;"  alt="" >
                     </label>
-                    <div class="toggle-content">
-                        テスト分
-                    </div>
-                </div><!-- /.toggle-wrap -->
+                    <div id="card-text" class="card toggle-content font-mpuls m-lg-n1" style="width: 20vh;">
+                        <div class="card-body">
+                            <h4 class="my-2">このページにつきまして</h4>
+                            <P>現在時刻を何となく表示する時計です。</P>
+                            <p>世田谷ベースのDaitai時計やPibbleのJapaneseFuzzyClockが好きすぎて作成しました。<br></p>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
     </main>

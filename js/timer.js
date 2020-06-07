@@ -24,8 +24,10 @@ function clock1() {
         time_image_ch.src="./img/night.png";
     } 
      //Hour調整
-     if(12 < Hour) {
+     if(12 <= Hour) {
         Hour = Hour-12;
+     }else if (Hour = 24) {
+         Hour=0;
      }
      var fuzzy = ar_Hourtxt[Number(Hour)]+"じ";
      //var fuzzy = fuzzy + ar_Hourtxt[Number(Hour)]+"じ";
