@@ -38,6 +38,8 @@
   }
 
   #card-text{
-    position: absolute;
-    right: 10vh;
+    position: fixed;
+    right: 5%;
+    bottom: 10vh;
+    width: 80%;
   }
