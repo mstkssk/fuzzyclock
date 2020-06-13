@@ -53,9 +53,17 @@ function clock1() {
     }else if (46 <= Min && Min < 51){//45-50
         fuzzy = fuzzy + "45ふんくらい"; 
     }else if (51 <= Min && Min < 56){//50-55
+        if(Hour < 12){
         fuzzy = "そろそろ" + ar_Hourtxt[Number(Hour)+1] + "じ"; 
+        }else{
+            fuzzy = "そろそろ" + ar_Hourtxt[0] + "じ";     
+        }
     }else if (56 <= Min && Min < 60){//55-60
-        fuzzy = ar_Hourtxt[Number(Hour)+1] + "じまえ";  
+        if(Hour < 12){
+        fuzzy = ar_Hourtxt[Number(Hour)+1] + "じまえ"; 
+        }else{
+            fuzzy = ar_Hourtxt[0] + "じまえ";     
+        } 
     }
     document.getElementById("timer01").innerHTML = fuzzy;
     document.getElementById("a_timer").style.fontSize =  window.innerWidth / 10 + "px";
