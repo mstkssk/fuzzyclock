@@ -43,3 +43,26 @@
     bottom: 10vh;
     width: 80%;
   }
+
+  @keyframes INOUT {
+    0% {
+      opacity:0;
+    }
+    25% {
+      opacity:1;
+    }
+    75% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+  }
+  #timer01::after{
+    content: "*";
+    font-size: 5vh;
+    animation-name: INOUT;
+    animation-duration:2s; 
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
